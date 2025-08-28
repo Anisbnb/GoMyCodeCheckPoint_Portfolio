@@ -1,0 +1,224 @@
+/* Import Roboto font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(120deg, #f0f4f8 0%, #e0eafc 100%);
+    margin: 0;
+    color: #222;
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav li {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.2s, color 0.2s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    background: #00b4d8;
+    color: #fff;
+    transform: scale(1.08);
+}
+header{
+    width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 5rem;
+    height: auto;
+    border-radius: 8px;
+    
+}
+/* Portfolio sections */
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 2rem 2.5rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #00b4d8;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Buttons */
+.btn {
+    background: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,180,216,0.08);
+}
+
+.btn:hover {
+    background: #0077b6;
+    transform: translateY(-2px) scale(1.04);
+}
+/* About section */
+#about video {
+    display: block;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,180,216,0.12);
+    background: #e0eafc;
+}
+
+/* Work section */
+#work ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.05rem;
+}
+#work li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+#work img {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,180,216,0.10);
+    background: #f0f4f8;
+}
+
+/* Resume section */
+#resume table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,180,216,0.07);
+}
+#resume th, #resume td {
+    border: 1px solid #e0eafc;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+#resume th {
+    background: #00b4d8;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#resume td {
+    color: #333;
+}
+
+/* Contact section */
+#contact form {
+    max-width: 400px;
+    margin: 1.5rem auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    background: #f8fafc;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,180,216,0.07);
+}
+#contact label {
+    font-weight: 600;
+    color: #0077b6;
+    margin-bottom: 0.2rem;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #e0eafc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff;
+    color: #222;
+    transition: border 0.2s;
+}
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+    border: 1.5px solid #00b4d8;
+    outline: none;
+}
+#contact input[type="submit"] {
+    background: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+footer{
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-radius: 0 0 12px 12px;
+    font-size: 1rem;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.05);
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .section {
+        padding: 1rem;
+    }
+    .navbar .nav-list {
+        gap: 1rem;
+    }
+}
